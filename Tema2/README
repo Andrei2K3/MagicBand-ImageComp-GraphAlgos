@@ -1,0 +1,47 @@
+Timp de implementare: 12 ore
+Pe checker-ul local am luat maximul de 100=80+20 puncte.
+
+-----------------------------------------------------------
+Pentru cerinta 1 si 2:
+    Am aplicat Divide et Impera pentru a diviza imaginea in 
+patru parti si tot asa... iar in tot acest timp am construit 
+si arborele cuaternar.
+    -----------------------------------------
+    |                  |                     |
+    |                  |                     |
+    |        1         |         2           |
+    |                  |                     |
+    |------------------|---------------------|
+    |                  |                     |
+    |                  |                     |
+    |        4         |         3           |
+    |                  |                     |
+    |                  |                     |
+    -----------------------------------------
+    Daca ma mut in zona 1, atunci o sa adaug in nod->child[0]
+informatiile aferente acelei parti ale imaginii.
+    Daca ma mut in zona 2, atunci o sa adaug in nod->child[1]
+informatiile aferente acelei parti ale imaginii.
+    Daca ma mut in zona 3, atunci o sa adaug in nod->child[2]
+informatiile aferente acelei parti ale imaginii.
+    Daca ma mut in zona 4, atunci o sa adaug in nod->child[3]
+informatiile aferente acelei parti ale imaginii.
+
+    Pentru cerinta 1:
+    Avand arborele cuaternar construit, mai trebuie doar sa-l
+parcurgem pentru a ne extrage informatiile din enuntul problemei.
+    Pentru cerinta 2:
+    Am observat ca ordinea parcurgerii ceruta in problema
+coincide cu ordinea parcurgerii in latime(BFS) => am aplicat
+algoritmul de BFS si am rezolvat si acest task.
+
+-----------------------------------------------------------
+    Pentru cerinta 3:
+    In fisierele de input avem parcurgerea prin BFS a unui
+arbore cuaternar => il putem reconstitui pe baza acestei
+parcurgeri.
+    Avand arborele cuaternar obtinut, reconstituirea imaginii
+va fi imediata.
+    Observatie:
+    !!!Rezolvarea acestui task presupune pasii de la task 1 si 2,
+dar in sens invers.
